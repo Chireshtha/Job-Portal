@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="filter">
+            <label for="jobType">Job Type</label>
+            <select id="jobType">
+                <option value="all">All</option>
+                <option value="fullTime">Full Time</option>
+                <option value="hybrid">Hybrid</option>
+                <option value="partTime">Part Time</option>
+                <option value="workFromHome">Work From Home</option>
+            </select>
+            <label for="location">Location</label>
+            <input type="text" id="location">
+            <label for="salary">Salary Range</label>
+            <input type="range" id="salary" min="0" max="100000" step="5000" value="50000">
+            <span id="salaryValue">50,000</span>
+            <button id="filterbtn">Apply Filter</button>
+        </div>
+        <div id="joblistings">
+            <!-- Job listings will be dynamically added here -->
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+
+</html>
